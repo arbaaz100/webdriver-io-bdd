@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642835023834' stop='1642835038131'>
+    <name>Automation Practice App Status</name>
+    <title>Automation Practice App Status</title>
+    <test-cases>
+        <test-case start='1642835023853' status='broken' stop='1642835038128'>
+            <name>Test application authenication page header</name>
+            <title>Test application authenication page header</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.45'/>
+                <parameter kind='environment-variable' name='BROWSER' value='Chrome'/>
+                <parameter kind='environment-variable' name='BROWSER_VERSION' value='90.0.8.9'/>
+                <parameter kind='environment-variable' name='PLATFORM' value='Windows'/>
+            </parameters>
+            <steps>
+                <step start='1642835023857' status='passed' stop='1642835026529'>
+                    <name>Given I am on the home page of automation practice website</name>
+                    <title>Given I am on the home page of automation practice website</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642835023860' status='passed' stop='1642835023860'>
+                            <name>STEP || Opening URL: http://automationpractice.com/index.php and maximizing window</name>
+                            <title>STEP || Opening URL: http://automationpractice.com/index.php and maximizing window</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642835026532' status='broken' stop='1642835038127'>
+                    <name>When I click on sign in button</name>
+                    <title>When I click on sign in button</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a224195a-2c22-4382-bbba-3878470bcc5b-attachment.png' type='image/png' size='28317'/>
+                        <attachment title='Screenshot' source='d1a8c0be-2f44-4933-8d41-fe58ec15823b-attachment.png' type='image/png' size='28317'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642835038128' status='canceled' stop='1642835038129'>
+                    <name>Then I must be navigated to my account page with header as "AUTHENTICATION"</name>
+                    <title>Then I must be navigated to my account page with header as "AUTHENTICATION"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "//a[@class='login']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//a[@class='login']" because element wasn't found
+                    at implicitWait (/home/arbaaz/Desktop/WebdriverIOCucumberTSFramework-master/node_modules/webdriverio/build/utils/implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (/home/arbaaz/Desktop/WebdriverIOCucumberTSFramework-master/node_modules/webdriverio/build/middlewares.js:20:29)
+                    at async Element.wrapCommandFn (/home/arbaaz/Desktop/WebdriverIOCucumberTSFramework-master/node_modules/@wdio/utils/build/shim.js:131:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "95adcc98646f5559",
+  "name" : "Test application authenication page header",
+  "time" : {
+    "start" : 1642833818990,
+    "stop" : 1642833830560,
+    "duration" : 11570
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

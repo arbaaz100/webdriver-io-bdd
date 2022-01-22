@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Automation Practice App Status",
+    "children" : [ {
+      "name" : "Test application authenication page header",
+      "uid" : "95adcc98646f5559",
+      "parentUid" : "4d7169a625b82f692b54b38597e269db",
+      "status" : "broken",
+      "time" : {
+        "start" : 1642833818990,
+        "stop" : 1642833830560,
+        "duration" : 11570
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-96.0.4664.45" ]
+    } ],
+    "uid" : "4d7169a625b82f692b54b38597e269db"
+  } ]
+}

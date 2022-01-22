@@ -1,0 +1,10 @@
+[ {
+  "values" : [ "Chrome" ],
+  "name" : "BROWSER"
+}, {
+  "values" : [ "90.0.8.9" ],
+  "name" : "BROWSER_VERSION"
+}, {
+  "values" : [ "Windows" ],
+  "name" : "PLATFORM"
+} ]
