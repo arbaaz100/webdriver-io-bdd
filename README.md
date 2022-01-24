@@ -66,5 +66,6 @@ Emailable HTML Report:
 └───wdio.conf.ts
 ```
 ### Sample Report
+![image](https://github.com/arbaaz100/webdriver-io-bdd/blob/master/.github/images/allureReport1.png)
 ![image](https://github.com/arbaaz100/webdriver-io-bdd/blob/master/.github/images/allureReport2.png)
 
