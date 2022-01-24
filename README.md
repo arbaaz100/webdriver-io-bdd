@@ -47,13 +47,9 @@ Emailable HTML Report:
 ### Folder Structure
 ```
 ├───src
-|   ├───features
-|   │  	    ├───smoke.feature
-|   │       └───CartProduct.feature    
+|   ├───features 
 |   ├───pages
-|   ├───steps
-|   │       └───singupCart.spec.ts
-|   │      
+|   ├───steps    
 |   └───testdata
 |           └───signup.json
 ├───Utils
