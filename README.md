@@ -13,8 +13,8 @@
 ### Getting Started
 Clone Repository
 ```bash
-1. git clone https://github.com/sadabnepal/WebdriverIOCucumberTSFramework.git
-2. Navigate to `WebdriverIOCucumberTSFramework`
+1. git clone https://https://github.com/arbaaz100/webdriver-io-bdd.git
+2. Navigate to `webdriver-io-bdd`
 ```
 
 Install the dependencies:
@@ -24,6 +24,7 @@ npm install
 
 Run tests:
 ```bash
+There is just one feature file is present so anyone of these commands will work
 npm test (to run all tests)
 npm run smoke (to run smoke suite)
 npm run regression (to run regression suite)
