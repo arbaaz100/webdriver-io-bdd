@@ -9,5 +9,17 @@ class PaymentDetailsPage extends BasePage {
     get proRataAmount() { return $("//input[@data-qa='pro-rata-amount']") }
     get backButton() { return $("//div[@class='back-button']") }
     get nextButton() { return $("//button[@data-qa='next']") }
+
+    async setFirstPayment(type: string) {
+        if(type == "Full amount") {
+            this.clickElement(this.fullAmountButton)
+        } else {
+            this.clickElement(this.proRataButton)
+        }
+    }
+
+    async clickOnNext() {
+        await this.clickElement(this.nextButton)
+    }
 }
 export default new PaymentDetailsPage()

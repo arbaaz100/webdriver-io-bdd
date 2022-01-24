@@ -8,5 +8,14 @@ class CompliancePage extends BasePage {
     get complainceDocuments() { return $("//label[@data-qa='compliance-documents-checkbox']") }
     get deelPremium() { return $("//label[@data-qa='toggleDeelPremium']") }
     get createContract() { return $("//button[@data-qa='create-contract']") }
+    get nextButton() { return $("//button[@data-qa='next']") }
+
+    async clickOnNext() {
+        await this.clickElement(this.nextButton)
+    }
+
+    async clickOnCreateContract() {
+        await this.clickElement(this.createContract)
+    }
 }
 export default new CompliancePage()

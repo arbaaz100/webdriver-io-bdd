@@ -2,11 +2,12 @@ import BasePage from "../../BasePage"
 
 class PaymentDetailsPage extends BasePage {
 
-    get pageHeader() { return $("//h1") }
+    get pageHeader() { return $("//h2") }
+    get nextButton() { return $("//button[@data-qa='next']") }
     get scopeOfWork() { return $("//textarea[@name='scope']") }
-    // get currencySelect() { return $("//div[@data-qa='currency-select']") }
-    // get paymentRate() { return $("//input[@name='rate']") }
-    // get paymentFrequency() { return $("//div[@data-qa='cycle-select']") }
+    get currencySelect() { return $("//div[@data-qa='currency-select']") }
+    get paymentRate() { return $("//input[@name='rate']") }
+    get paymentFrequency() { return $("//div[@data-qa='cycle-select']") }
     get invoiceCheckbox() { return $("div.deel-ui__checkbox__custom-input") }
 
     async clickDropdownOnPaymentDetails(option: string) {
@@ -25,6 +26,14 @@ class PaymentDetailsPage extends BasePage {
 
     async selectFromDropdown(item: string){
         await this.clickElement($(`//div[text()='${item}']`))
+    }
+
+    async setPaymentRate(amount: string) {
+        await this.setData(this.paymentRate, amount)
+    }
+
+    async clickOnNext() {
+        await this.clickElement(this.nextButton)
     }
 
 }

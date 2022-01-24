@@ -13,8 +13,8 @@ export const config: WebdriverIO.Config = {
     exclude: [],
 
     suites: {
-        smoke: ['./src/test/features/smoke.feature'],
-        regression: ['./src/test/features/CartProduct.feature']
+        smoke: ['./src/test/features/fixedRateContract.feature'],
+        regression: ['./src/test/features/*.feature']
     },
     // ============
     // Capabilities

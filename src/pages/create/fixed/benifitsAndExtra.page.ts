@@ -8,5 +8,14 @@ class BenifitsAndExtrasPage extends BasePage {
     get addDocuments() { return $("//button[@data-qa='attach']") }
     get addSpecialClause() { return $("//button[@data-qa='add-a-special-clause']") }
     get specialClauseTextArea() { return $("//textarea") }
+    get nextButton() { return $("//button[@data-qa='next']") }
+
+    async setSpecialClause(clauseText: string) {
+        this.setData(this.addSpecialClause, clauseText)
+    }
+
+    async clickOnNext() {
+        await this.clickElement(this.nextButton)
+    }
 }
 export default new BenifitsAndExtrasPage()
